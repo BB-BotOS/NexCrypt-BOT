@@ -20,7 +20,7 @@ class Config(object):
     LOAD = []
     NO_LOAD = ['translation', 'rss']
     WEBHOOK = ANYTHING
-    URL = 
+    URL = https://bb-botos.github.io/NexCrypt-BOT/
 
     # OPTIONAL
     SUDO_USERS = []  # List of id's (not usernames) for users which have sudo access to the bot.
