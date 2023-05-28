@@ -15,7 +15,7 @@ class Config(object):
     OWNER_USERNAME = MikuX_Dev
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'sqldbtype://username:pw@hostname:port/db_name'  # needed for any database modules
+    database_url = 'postgres://username:password@host:5432/database_name'  # needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     LOAD = []
     NO_LOAD = ['translation', 'rss']
