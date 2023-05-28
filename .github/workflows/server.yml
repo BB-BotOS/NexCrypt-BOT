@@ -1,0 +1,22 @@
+name: PostgreSQL CI
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up PostgreSQL
+        uses: docker://postgres:latest
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: test_db
+
+      # Add any additional steps for building and testing your PostgreSQL server
