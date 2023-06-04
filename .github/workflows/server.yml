@@ -14,7 +14,7 @@ jobs:
         image: postgres:latest
         env:
           POSTGRES_USER: miku
-          POSTGRES_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          POSTGRES_PASSWORD: b*rXfXYN*!7&LoPYHS^vj2bHmUE&&b%gGtWqpcmW2b24NpwxjRo$k!QB88KgnSdQ4%4PEsZU7KnNqH3LbnmpW&VtdYsEwuH66vehVvpyp&zjSB@ML7G&GWhVvWKZij!F
           POSTGRES_DB: MikuX_db
         ports:
           - 5432:5432
