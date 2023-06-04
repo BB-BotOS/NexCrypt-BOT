@@ -26,6 +26,6 @@ jobs:
 
       - name: Set up PostgreSQL
         run: |
-          psql -h localhost -U miku -c telegram_bot_schema.sql
+          psql -h localhost -U miku -f telegram_bot_schema.sql
 
       # Add other steps for building and testing your Telegram bot code
